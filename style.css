@@ -2,12 +2,13 @@ body{
   color: rgb(33, 25, 34);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 12px;
-    width:100%;/* para que aparezcan las imagenes en toda la pantalla,intente darle el width a un id para el section pero no funciono*/
+    margin: 0;
+    padding:0;
 
 }
 ul {
     list-style-type: none; /* con esto quitamos los puntos del ul*/
-    margin: 0;
+    margin-top: 15px;
     padding: 0;
     background-color:white;
     overflow: hidden;
@@ -31,15 +32,50 @@ ul {
     border-radius: 30px;
   }
   
+  .botones{
+    margin-top: 12px;
+  }
+
+  #pinterest-icon {
+    width: 30px;
+    height: 30px;
+    
+  }
+  #botonbusqueda{
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 100px;
+    border:0;
+  }
+  input::placeholder {
+    text-align:center;
+    color:gray;
+    font-size: 25;
+    font-style: italic;
+  }
+    
    #barrabusqueda{
-    background-color: transparent;
+    padding-right: 100px;
+    z-index:1;
+    position: relative;
+    background-color:#efefef;
+    border-radius: 50px;
+    border: 0;
+    width: 1550px;
+    height:50px;
   } 
   
   #botoninicio{
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: #111;
     font-weight: 700;/*font-weight permite establecer el grosor con el que se muestran las letras del texto*/
-    font-size: 15px;
+    font-size: 18px;
 
   }
   
@@ -47,22 +83,65 @@ ul {
     border-radius: 20px;
     color: #111;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
   }
-  #imagenperfil{
-    border-radius: 20px;
+  #campana{
+    width:27px;
+    height: 27px;
+  }
+  #mensaje{
+    width: 27px;
+    height: 27px;
   }
 
-  .imagen{
-    display:inline-block;
-    border-radius: 100px;
+  #imagenperfil{
+    border-radius: 20px;
+    width:30px;
+    height: 30px;
+  }
+  #flecha{
+    width:15px;
+    height: 15px;
+    margin-top: 19px;
+  }
+
+  main{
+    justify-content:center;
+    margin-left:55px;
+    margin-right: 45px;
+  }
+
+  .fila{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .columna{
+    flex: 10%; 
+    padding:5px
+  }
+
+  .fila .columna img{
+    margin-top: 5px;
+    margin-bottom: 25px;
     cursor: zoom-in;
-    /* color: transparent; */
-    /* position: relative; */
-  }
-  section div img{
     border-radius: 30px;
-    margin-bottom: 30px;
-    margin-right: 10px;
-    width: 252px; 
+    width: 252px;  
   }
+  
+  @media (max-width:800px)
+  {
+    .columna{
+      flex:50%;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width:600px)
+{
+  .columna{
+    flex:100%;
+    padding: 5px;
+    margin-left: 70px;
+  }
+}

@@ -11,17 +11,17 @@
 
 <body> 
 <header>
-  <nav id="navbar-pinterest">   
-      <ul>
+  <nav id="navbar-pinterest">    
+    <ul>
         <div id="contenedor1">
 
         <li><a href="https://www.pinterest.com.mx"> 
-          <div id="pinterest-icon">
-            <img src="./iconos/pinterest.png" alt="pinterest" height="24px" width="24px">
+          <div >
+            <img class="botones" id="pinterest-icon" src="./iconos/pinterest.png" alt="pinterest" height="24px" width="24px">
           </div></a></li>
 
-        <li><a id="botoninicio" href="#">Inicio</a></li>
-        <li><a id="botonhoy" href="#">Hoy</a></li>
+        <li><a class="botones" id="botoninicio" href="#">Inicio</a></li>
+        <li><a class="botones" id="botonhoy" href="#">Hoy</a></li>
 
       </div>
 
@@ -30,7 +30,7 @@
       <div id="contenedor2">
 
         <li><a href="#"><div id="lupa">
-          <button type="submit "><img src="./iconos/lupa.png" alt="lupa" height="24px" width="24px"></button>
+          <button id="botonbusqueda" type="submit"><img src="./iconos/lupa.png" alt="lupa" height="24px" width="24px"></button>
           <input id="barrabusqueda" type="search" placeholder="Buscar..." class="finder">
           
           
@@ -40,21 +40,21 @@
 
         <li><a href="#">
           <div id="notifications"> 
-            <img src="./iconos/campana.png" alt="campana" height="24px" width="24px">
+            <img id="campana" class="botones" src="./iconos/campana.png" alt="campana" height="24px" width="24px">
           </div></a></li>
 
         <li><a href="#">
           <div id="message"> 
-            <img src="./iconos/burbuja.png" alt="burbuja" height="24px" width="24px">
+            <img id="mensaje" class="botones" src="./iconos/burbuja.png" alt="burbuja" height="24px" width="24px">
           </div></a></li>
         <li><a href="#">
           <div > 
-            <img id="imagenperfil" src="./iconos/Ale.jpg" alt="Ale" height="24px" width="24px" >
+            <img class="botones" id="imagenperfil" src="./iconos/Ale.jpg" alt="Ale" height="24px" width="24px" >
           </div></a></li>
 
         <li><a href="#">
-          <div id="flecha">
-            <img src="./iconos/flecha.png" alt="flecha" height="24px" width="24px">
+          <div >
+            <img id="flecha"class="botones" src="./iconos/flecha.png" alt="flecha" height="24px" width="24px">
           </div></a></li>
         </div>
       </ul>
@@ -62,38 +62,61 @@
 </header>
 
   <main>
-    <section>
-      <div class="imagen"> <img src="./imagenes/1.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/2.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/3.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/4.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/5.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/6.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/7.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/8.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/9.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/10.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/11.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/12.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/13.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/14.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/15.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/16.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/17.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/18.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/19.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/20.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/21.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/22.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/23.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/24.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/25.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/26.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/27.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/28.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/29.jpg" alt=""></div>
-      <div class="imagen"> <img src="./imagenes/30.jpg" alt=""></div>
-    </section>
+    <div class="fila">
+
+    <div class="columna">
+      <img src="./imagenes/1.jpg" alt="">
+      <img src="./imagenes/2.jpg" alt="">
+      <img src="./imagenes/3.jpg" alt="">
+      <img src="./imagenes/4.jpg" alt="">
+      <img src="./imagenes/5.jpg" alt=""> 
+    </div>
+
+    <div class="columna"> 
+      <img src="./imagenes/6.jpg" alt="">
+      <img src="./imagenes/7.jpg" alt="">
+      <img src="./imagenes/8.jpg" alt="">
+      <img src="./imagenes/9.jpg" alt="">
+      <img src="./imagenes/10.jpg" alt="">
+    </div>
+
+    <div class="columna">
+      <img src="./imagenes/11.jpg" alt="">
+       <img src="./imagenes/12.jpg" alt="">
+       <img src="./imagenes/13.jpg" alt="">
+       <img src="./imagenes/14.jpg" alt="">
+     </div>
+
+    <div class="columna">
+      <img src="./imagenes/15.jpg" alt="">
+       <img src="./imagenes/16.jpg" alt="">
+       <img src="./imagenes/17.jpg" alt="">
+       <img src="./imagenes/18.jpg" alt="">
+     </div>
+
+    <div class="columna">
+      <img src="./imagenes/19.jpg" alt="">
+       <img src="./imagenes/20.jpg" alt="">
+       <img src="./imagenes/21.jpg" alt="">
+       <img src="./imagenes/22.jpg" alt="">
+       </div>
+
+    <div class="columna">
+      <img src="./imagenes/23.jpg" alt="">
+       <img src="./imagenes/24.jpg" alt="">
+       <img src="./imagenes/25.jpg" alt="">
+       <img src="./imagenes/26.jpg" alt="">
+      </div>
+
+    <div class="columna">
+      <img src="./imagenes/27.jpg" alt="">
+      <img src="./imagenes/28.jpg" alt="">
+      <img src="./imagenes/29.jpg" alt="">
+      <img src="./imagenes/30.jpg" alt=""> 
+    </div>
+
+  </div>
+       
   </main>
 
   <footer class="contenedor" id="contacto"> </footer>
